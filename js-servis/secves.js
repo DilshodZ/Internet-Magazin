@@ -1,3 +1,4 @@
+
 let nav_list = document.getElementById('nav-list')
 let bars = document.getElementById("bars");
 let menu = document.getElementById('menu');

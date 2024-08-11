@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
@@ -9,12 +10,7 @@
 body{
     background: #333333;
 }
-.header{
-    width: 100%;
-    height: 80vh;
-    background: url(../Image-serves-catalog/Header-img/img.png) center;
-    background-size: cover;
-}
+
 .head-all{
     width: 100%;
     position: relative;
@@ -27,9 +23,8 @@ body{
     backdrop-filter: blur(20px);
     background: #212121CC;
     padding: 20px 30px;
+    z-index: 3;
     position: sticky;
-    top: 0;
-    z-index: 2;
     width: 100%;
 }
 
@@ -93,6 +88,7 @@ body{
 .nav-list{
     position: absolute;
     top: 0;
+    z-index: 100;
     background: url(../Image-serves-catalog/logo/Rectangle\ 47.png);
     height: 100vh;
     padding: 20px 40px;
@@ -120,15 +116,6 @@ body{
 }
 .paragraf{
     margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.paragraf a{
-    text-decoration: none;
-    color: #ADACAC;
-    font-size: 12px;
-    margin: 10px 0;
 }
 @media screen and (max-width: 1200px) {
     .nav-list{
@@ -158,206 +145,196 @@ body{
 /* Ul List */
 
 /* Main Start */
-.main{
+.secves-1 h2{
+    color: #FFFFFF;
+    font-family: "Jura";
+    padding: 20px 0;
+
+}
+.after-link {
     display: flex;
+    gap: 10px;
     justify-content: center;
-    text-align: center;
 }
-.text{
-    margin-top: 150px;
-
-}
-.text h2{
-    font-family: "Jura";
-    color: #FFFFFF;
-    margin-bottom: 40px;
-}
-.text p{
-    color: #FFFFFF;
-    font-family: "Montserrat";
-    font-size: 13px;
-    letter-spacing: 1px;
-}
-@media screen and (max-width: 768px) {
-    .text p{
-        color: #FFFFFF;
-        font-family: "Montserrat";
-        font-size: 14px;
-        letter-spacing: 1px;
-        padding: 0 10px;
-    }
-}
-/* Main  End */
-
-/* Section-Contant-1 Start  */
-.Section-Contant-1{
-    padding: 25px 0;
-}
-.section{
-    display: flex;
-    justify-content: space-evenly;
-}
-.cart{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
-}
-.word-2{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #4F4F4F;
-    gap: 150px;
-}
-.word{
-    margin-bottom: 30px;
-}
-.imgs-1{
-    cursor: pointer;
-}
-.others h3{
-    color: #FFFFFF;
-    font-family: "Jura";
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-.item{
-    overflow: hidden;
-    transition: 0.20s;
-}
-.text-2 h6,p{
-    font-size: 12px;
+.after-link a{
     color: #ADACAC;
-}
-.text-2 h6:hover{
-    color: #FFFFFF;
-}
-.imgs-2 img:hover{
-    background: #ffffff;
-    border-radius: 10%;
-}
-.cart-2{
-    background: #272727;
-    border-radius: 14px;
-    width: 220px;
-    height: 300px;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-}
-.img-1-2 img{
-    position: absolute;
-    right: 10px;
-}
-.img-1-3 img{
-    margin-top: 50px;
-}
-.title{
-    color: #FFFFFF;
-    line-height: 10px;
-}
-.title h6{
-    font-size: 12px;
-}
-.into-tit{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-}
-.into-tit p{
-    font-size: 10px;
-}
-.into-tit a{
     text-decoration: none;
-    color: #FF3232;
-    font-size: 10px;
-    margin-top: -14px;
+    padding: 3px 0;
+    
 }
-@media screen and (max-width: 1200px) {
-    .section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.after-link a:hover{
+    color: #FFFFFF;
+    border-bottom: 2px solid #ED0C0C;
+}
+.num h3{
+    color: #FFFFFF;
+    font-family: "Jura";
+    padding-top: 50px;
 }
 @media screen and (max-width: 768px) {
-    .cart{
+    .after-link{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+@media screen and (max-width: 568px) {
+    .after-link{
         display: grid;
         grid-template-columns: auto auto;
     }
 }
 @media screen and (max-width: 568px) {
-    .cart{
+    .after-link{
         display: grid;
         grid-template-columns: auto;
     }
 }
-/* Section-Contant-1 End */
+/* Main End */
 
-/* Section-Contant-2 Start */
-.Section-Contant-2{
-    margin-top: -25px;
+
+
+/* Section-Contant Start */
+.section{
+    background: #FFFFFF;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 40px 0;
 }
-
-.imgs{
+.forms-1{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 32px;
-    overflow-x: scroll;
+    gap: 30px;
+    padding: 0 10px;
 }
-.img-1{
-    margin: 20px 0;
+
+.forms-2{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+    padding: 0 10px;
+}
+.forms-3{
+    display: flex;
+    justify-content: center;
+}
+.inputs-2{
+    width: 80%;
+}
+.inputs-2 textarea {
+    height: 25vh;
+    background: #F6F6F6;
+}
+.inputs-2 textarea::placeholder{
+    color: #ADACAC;
+}
+.inputs-2 label{
+    color: #4F4F4F;
+    font-size: 13px;
+    margin: 8px 20px;
+}
+.inputs img{
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    cursor: pointer;
+}
+.inputs{
+    background: #F6F6F6;
+    width: 430px;
+    padding: 25px 38px;
     position: relative;
-    left: 140px;
+    border-radius: 5px;
 }
-@media screen and (max-width: 1300px) {
-    .imgs{
-        overflow-x: scroll;
+.inputs input{
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 5px 0;
+    color: #4F4F4F;
+}
+.inputs input::placeholder{
+    color: #ADACAC;
+}
+.inputs label{
+    color: #4F4F4F;
+    font-size: 12px;
+}
+.inputs-1{
+    border-bottom: 3px solid #4F4F4F !important;
+    width: 100%;
+}
+.btn-1 a button{
+    border: 1px solid #ED0C0C;
+    border-radius: 20px;
+    background: transparent;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin-top: 25px;    
+}
+@media screen and (max-width: 1200px) {
+    .inputs-2{
+        width: 100%;
+        padding: 0 10px;
     }
-    .img-1{
+}
+@media screen and (max-width: 992px) {
+    .forms-1{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 10px;
+    }
+    
+    .forms-2{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
         margin: 20px 0;
-        position: relative;
-        left: 270px;
+        padding: 0 10px;
+    }
+    .inputs-2{
+        width: 100%;
+        padding: 0 10px;
     }
 }
-
-@media screen and (max-width: 1100px) {
-    .imgs{
-        overflow-x: scroll;
+@media screen and (max-width: 750px) {
+    .forms-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .img-1{
-        margin: 20px 0;
-        position: relative;
-        left: 250px;
-    }
-}
-
-@media screen and (max-width:  992px) {
-    .imgs{
-        overflow-x: scroll;
-    }
-    .img-1{
-        margin: 20px 0;
-        position: relative;
-        left: 350px;
+    .forms-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
-@media screen and (max-width:  768px) {
-    .imgs{
-        overflow-x: scroll;
-    }
-    .img-1{
-        margin: 20px 0;
-        position: relative;
-        left: 450px;
+@media screen and (max-width: 568px) {
+    .inputs{
+        width: 100%;
     }
 }
-.borders{
-    border-bottom: 1px solid #4F4F4F !important;
-    margin: 10px 0;
+@media screen and (max-width: 320px) {
+    .inputs{
+        width: 100%;
+        padding: 25px 10px;
+    }
+    .inputs img{
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        cursor: pointer;    
+    }
 }
-/* Section-Contant-2 End */
+/* Section-Contant End */
 
 
 /* Aside-Contant Start */
@@ -386,7 +363,7 @@ body{
     border: none;
     color: #ffffff;
     outline: none;
-    font-size: 14px;
+    font-size: 12px;
 }
 /* Aside-Contant End */
 
