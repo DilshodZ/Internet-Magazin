@@ -103,6 +103,7 @@ body{
     padding: 20px 40px;
     width: 25%;
     transform: translateX(-700px);
+    z-index: 100;
     transition: 0.40s;
 }
 .active{
